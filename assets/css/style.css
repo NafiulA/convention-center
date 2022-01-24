@@ -30,8 +30,43 @@ body{
     color: #3F87F5;
 }
 
+/*faq styles*/
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.half-width{
+    width: 50%;
+}
 /*footer section*/
 
 footer{
     background-color: #0B0D17;
+}
+
+/*faq responsive mobile*/
+
+@media only screen and (max-width:688px){
+    .flex-container{
+        flex-direction: column-reverse;
+    }
+    .half-width{
+        width: 100%;
+    }
+    .half-width img{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 689px) and (max-width: 991px){
+    .flex-container{
+        flex-direction: column-reverse;
+    }
+    .half-width{
+        width: 100%;
+    }
+    .half-width img{
+        width: 100%;
+    }
 }
